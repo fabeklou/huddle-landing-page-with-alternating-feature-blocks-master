@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+//global style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: hsl(192, 100%, 9%);
+    background: #fff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "poppins", sans-serif;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.btn {
+    border-radius: 4rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+//style for the header
+header {
+    background: url(./../images/bg-hero-mobile.svg),
+        hsl(193, 100%, 96%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-top: 1.5rem;
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #logo {
+
+            img {
+                height: 1.3rem;
+            }
+        }
+
+        .btn {
+            padding: 0.4rem 1.5rem;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+        }
+
+    }
+
+    .hero {
+        margin: 6rem 0 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .message {
+
+            h1,
+            p {
+                padding: 0 1.5rem;
+            }
+
+            h1 {
+                margin-bottom: 2rem;
+                line-height: 140%;
+            }
+
+            p {
+                line-height: 150%;
+            }
+
+            .btn-action {
+                margin: 2rem 0 3.5rem;
+                padding: 0.8rem 4rem;
+                color: #fff;
+                background: hsl(322, 100%, 66%);
+                box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+                transition: 200ms ease-in;
+
+                &:hover {
+                    background: hsl(322, 96%, 78%);
+                }
+            }
+        }
+
+        .illustration {
+
+            img {
+                width: calc(100% - 4rem);
+                min-width: 280px;
+            }
+        }
+    }
+}
+
+// style for the main content 
+
+main {
+    margin: 3rem 0 10rem;
+
+    .wrapper {
+        max-width: 968px;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding: 2.5rem;
+        box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.1);
+        text-align: center;
+
+        img {
+            width: 100%;
+            margin: 2rem 0 3rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: hsl(208, 11%, 55%);
+        }
+    }
+
+    .flowing-conversations {
+        margin: 2rem 0;
+    }
+
+}
+
+// style for contact section
+
+.contact {
+    position: absolute;
+    left: 50%;
+    top: -6.5rem;
+    transform: translateX(-50%);
+    max-width: 720px;
+    width: 100%;
+    padding: 0 1rem;
+
+    .container {
+        width: 100%;
+        background: #fff;
+        text-align: center;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .btn-get-started {
+        margin-top: 1.5rem;
+        padding: 0.8rem 3rem;
+        color: #fff;
+        background: hsl(322, 100%, 66%);
+        box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+        font-size: 0.7rem;
+        transition: 200ms ease-in;
+
+        &:hover {
+            background: hsl(322, 96%, 78%);
+        }
+    }
+}
+
+
+// style for the footer 
+
+footer {
+    background: hsl(192, 100%, 9%);
+    position: relative;
+    padding: 8.5rem 0 1rem;
+
+    .logo-footer {
+        img {
+            height: 1.8rem;
+        }
+    }
+
+    a,
+    p,
+    h4 {
+        color: hsl(193, 100%, 96%);
+        font-weight: 400;
+    }
+
+    .attribution {
+        position: relative;
+    }
+
+    h4 {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+//global for footer main content
+.footer-main-content {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        height: 1.3rem;
+    }
+
+    li {
+
+        a {
+            font-size: 1.3rem;
+        }
+    }
+
+    p {
+        font-size: 1.125rem;
+        line-height: 175%;
+    }
+}
+
+.address>ul {
+
+    li {
+        margin: 1.5rem 0;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    img {
+        margin-right: 1rem;
+    }
+}
+
+.location {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.7rem;
+    margin-top: 1.5rem;
+
+    div:first-of-type {
+        padding-top: 0.6rem;
+    }
+}
+
+.links {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-one,
+.links-two {
+    li {
+        margin: 1.5rem 0;
+    }
+
+    li:last-of-type {
+        margin: 0;
+    }
+
+    a {
+        transition: 200ms ease-in;
+        border-bottom: 0.085rem solid transparent;
+
+        &:hover {
+            border-bottom: 0.08rem solid hsl(193, 100%, 96%);
+        }
+    }
+}
+
+.links-three {
+    margin: 4.5rem 0 1.5rem;
+
+    ul {
+        text-align: center;
+
+        li:nth-of-type(2) {
+            margin: 0 0.7rem;
+        }
+
+        li {
+            display: inline-block;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 2.5rem;
+                aspect-ratio: 1;
+                border: solid 1px #fff;
+                border-radius: 50%;
+                font-size: 1.05rem;
+                transition: 200ms ease-in;
+
+                &:hover {
+                    color: hsl(322, 100%, 66%);
+                    border: solid 1px hsl(322, 100%, 66%);
+                }
+            }
+        }
+    }
+}
